@@ -2,16 +2,18 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     height: 100vh;
 }
-#myCheckbox{
+
+#myCheckbox {
     opacity: 0.2;
     width: 24px;
     height: 24px;
 }
 
-/* .e198_145 {
+.sidebar-close {
     overflow: hidden;
     background-color: rgba(74, 109, 197, 1);
     width: 70px;
@@ -21,13 +23,8 @@ body{
     position: absolute;
 }
 
-.e198_146,
-.e198_148,
-.e198_147,
-.e198_149,
-.e198_150,
-.e198_151,
-.e198_152 {
+.logout-button-close,
+.menu-item-close {
     width: 40px;
     height: 40px;
     position: absolute;
@@ -35,37 +32,37 @@ body{
     border-radius: 10px;
 }
 
-.e198_146 {
+.logout-button-close {
     top: 636px;
     background-color: rgba(242, 135, 101, 1);
 }
 
-.e198_147 {
+.menu-item-home-close {
     top: 370px;
     background-color: rgba(242, 135, 101, 1);
 }
 
-.e198_148 {
+.menu-item-about-close {
     top: 306px;
     background-color: rgba(242, 135, 101, 1);
 }
 
-.e198_149 {
+.menu-item-contact-close {
     top: 242px;
     background-color: rgba(242, 135, 101, 1);
-    }
+}
 
-.e198_150 {
+.menu-item-services-close {
     top: 178px;
     background-color: rgba(242, 135, 101, 1);
 }
 
-.e198_151 {
+.menu-item-gallery-close {
     top: 114px;
     background-color: rgba(242, 135, 101, 1);
 }
 
-.e198_152 {
+.menu-item-settings-close {
     background-color: rgba(255, 2, 2, 1);
     width: 24px;
     height: 24px;
@@ -73,11 +70,10 @@ body{
     left: 46px;
     top: 35px;
     border-radius: 10px;
-} */
+}
 
 
-/* open */
-.e198_145 {
+.sidebar-open {
     display: flex;
     position: absolute;
     overflow: hidden;
@@ -88,13 +84,8 @@ body{
     border-top-right-radius: 10px;
 }
 
-.e198_146,
-.e198_148,
-.e198_147,
-.e198_149,
-.e198_150,
-.e198_151,
-.e198_152 {
+.logout-button-open,
+.menu-item-open {
     width: 200px;
     height: 40px;
     position: absolute;
@@ -102,37 +93,37 @@ body{
     border-radius: 10px;
 }
 
-.e198_146 {
+.logout-button-open {
     top: 636px;
     background-color: rgba(242, 135, 101, 1);
 }
 
-.e198_147 {
+.menu-item-home-open {
     top: 370px;
     background-color: rgba(242, 135, 101, 1);
 }
 
-.e198_148 {
+.menu-item-about-open {
     top: 306px;
     background-color: rgba(242, 135, 101, 1);
 }
 
-.e198_149 {
+.menu-item-contact-open {
     top: 242px;
     background-color: rgba(242, 135, 101, 1);
-    }
+}
 
-.e198_150 {
+.menu-item-services-open {
     top: 178px;
     background-color: rgba(242, 135, 101, 1);
 }
 
-.e198_151 {
+.menu-item-gallery-open {
     top: 114px;
     background-color: rgba(242, 135, 101, 1);
 }
 
-.e198_152 {
+.menu-item-settings-open {
     background-color: rgba(255, 2, 2, 1);
     width: 24px;
     height: 24px;
