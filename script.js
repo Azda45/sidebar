@@ -1,21 +1,30 @@
+var docTitle = document.title;
+window.addEventListener("blur", () => {
+  document.title = "Please Come Back ;(";
+});
+window.addEventListener("focus", () => {
+  document.title = docTitle;
+});
+
 function changeClassBasedOnCheckbox() {
   var checkboxElement = document.getElementById("myCheckbox");
-  var divElement = document.getElementById("container");
+  var sidebar = document.getElementById("sidebars");
+  var toggle = document.getElementById("toggle");
 
   if (checkboxElement.checked) {
-    divElement.classList.remove("container-red");
-    divElement.classList.remove("container-red");
-    divElement.classList.remove("container-red");
-    divElement.classList.add("container-black");
-    divElement.classList.add("container-black");
-    divElement.classList.add("container-black");
+    // sidebar
+    sidebar.classList.remove("sidebars-open");
+    sidebar.classList.add("sidebars-close");
+    // toggle
+    toggle.classList.remove("toggle-open");
+    toggle.classList.add("toggle-close");
   } else {
-    divElement.classList.remove("container-black");
-    divElement.classList.remove("container-black");
-    divElement.classList.remove("container-black");
-    divElement.classList.add("container-red");
-    divElement.classList.add("container-red");
-    divElement.classList.add("container-red");
+    // sidebar
+    sidebar.classList.remove("sidebars-close");
+    sidebar.classList.add("sidebars-open");
+    // toggle
+    toggle.classList.remove("toggle-close");
+    toggle.classList.add("toggle-open");
   }
 }
 

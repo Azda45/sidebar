@@ -7,73 +7,46 @@ body {
     height: 100vh;
 }
 
+:root {
+    --color-block: #f28765;
+}
 #myCheckbox {
-    opacity: 0.2;
+    opacity: 0;
     width: 24px;
     height: 24px;
 }
 
-.sidebar-close {
-    overflow: hidden;
-    background-color: rgba(74, 109, 197, 1);
-    width: 70px;
-    height: 100%;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    position: absolute;
-}
+/* ---------------------------------------------------*/
 
-.logout-button-close,
-.menu-item-close {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: 15px;
-    border-radius: 10px;
-}
-
-.logout-button-close {
-    top: 636px;
-    background-color: rgba(242, 135, 101, 1);
-}
-
-.menu-item-home-close {
-    top: 370px;
-    background-color: rgba(242, 135, 101, 1);
-}
-
-.menu-item-about-close {
-    top: 306px;
-    background-color: rgba(242, 135, 101, 1);
-}
-
-.menu-item-contact-close {
-    top: 242px;
-    background-color: rgba(242, 135, 101, 1);
-}
-
-.menu-item-services-close {
-    top: 178px;
-    background-color: rgba(242, 135, 101, 1);
-}
-
-.menu-item-gallery-close {
-    top: 114px;
-    background-color: rgba(242, 135, 101, 1);
-}
-
-.menu-item-settings-close {
-    background-color: rgba(255, 2, 2, 1);
+/* toggle */
+    /* open */
+.toggle-open {
+    background-color: red;
     width: 24px;
     height: 24px;
     position: absolute;
-    left: 46px;
+    left: 216px;
     top: 35px;
     border-radius: 10px;
+    transition: ease 0.4s;
+}
+    /* close */
+.toggle-close {
+    background-color: red;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 45px;
+    top: 35px;
+    border-radius: 10px;
+    transition: ease 0.4s;
 }
 
+/* ---------------------------------------------------*/
 
-.sidebar-open {
+/* sidebar */
+  /* open */
+.sidebars-open {
     display: flex;
     position: absolute;
     overflow: hidden;
@@ -82,53 +55,17 @@ body {
     height: 100%;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
+    transition: ease 0.4s;
 }
-
-.logout-button-open,
-.menu-item-open {
-    width: 200px;
-    height: 40px;
+  /* close */
+.sidebars-close {
+    display: flex;
     position: absolute;
-    left: 15px;
-    border-radius: 10px;
-}
-
-.logout-button-open {
-    top: 636px;
-    background-color: rgba(242, 135, 101, 1);
-}
-
-.menu-item-home-open {
-    top: 370px;
-    background-color: rgba(242, 135, 101, 1);
-}
-
-.menu-item-about-open {
-    top: 306px;
-    background-color: rgba(242, 135, 101, 1);
-}
-
-.menu-item-contact-open {
-    top: 242px;
-    background-color: rgba(242, 135, 101, 1);
-}
-
-.menu-item-services-open {
-    top: 178px;
-    background-color: rgba(242, 135, 101, 1);
-}
-
-.menu-item-gallery-open {
-    top: 114px;
-    background-color: rgba(242, 135, 101, 1);
-}
-
-.menu-item-settings-open {
-    background-color: rgba(255, 2, 2, 1);
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    left: 216px;
-    top: 35px;
-    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(74, 109, 197, 1);
+    width: 70px;
+    height: 100%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: ease 0.4s;
 }
