@@ -69,3 +69,12 @@ body {
     border-top-right-radius: 10px;
     transition: ease 0.4s;
 }
+.logout-open{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    left: 20px;
+    top: 420px;
+    border-radius: 10px;
+    background-color: var(--color-block);
+}
