@@ -77,4 +77,15 @@ body {
     top: 420px;
     border-radius: 10px;
     background-color: var(--color-block);
+    transition: ease 0.4s;
+}
+.logout-close{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: 20px;
+    top: 420px;
+    border-radius: 10px;
+    background-color: var(--color-block);
+    transition: ease 0.4s;
 }

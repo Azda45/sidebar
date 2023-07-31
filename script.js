@@ -10,6 +10,7 @@ function changeClassBasedOnCheckbox() {
   var checkboxElement = document.getElementById("myCheckbox");
   var sidebar = document.getElementById("sidebars");
   var toggle = document.getElementById("toggle");
+  var logout = document.getElementById("logout")
 
   if (checkboxElement.checked) {
     // sidebar
@@ -18,6 +19,9 @@ function changeClassBasedOnCheckbox() {
     // toggle
     toggle.classList.remove("toggle-open");
     toggle.classList.add("toggle-close");
+    // logout
+    logout.classList.remove("logout-open")
+    logout.classList.add("logout-close")
   } else {
     // sidebar
     sidebar.classList.remove("sidebars-close");
@@ -25,6 +29,9 @@ function changeClassBasedOnCheckbox() {
     // toggle
     toggle.classList.remove("toggle-close");
     toggle.classList.add("toggle-open");
+        // logout
+        logout.classList.remove("logout-close")
+        logout.classList.add("logout-open")
   }
 }
 
