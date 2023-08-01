@@ -11,6 +11,7 @@ function changeClassBasedOnCheckbox() {
   var sidebar = document.getElementById("sidebars");
   var toggle = document.getElementById("toggle");
   var logout = document.getElementById("logout")
+  var icon = document.getElementById("toggle-icon")
 
   if (checkboxElement.checked) {
     // sidebar
@@ -22,6 +23,9 @@ function changeClassBasedOnCheckbox() {
     // logout
     logout.classList.remove("logout-open")
     logout.classList.add("logout-close")
+    // icon
+    icon.classList.remove("bx-chevron-left")
+    icon.classList.add("bx-chevron-right")
   } else {
     // sidebar
     sidebar.classList.remove("sidebars-close");
@@ -32,6 +36,9 @@ function changeClassBasedOnCheckbox() {
         // logout
         logout.classList.remove("logout-close")
         logout.classList.add("logout-open")
+        // icon
+        icon.classList.remove("bx-chevron-right")
+        icon.classList.add("bx-chevron-left")
   }
 }
 

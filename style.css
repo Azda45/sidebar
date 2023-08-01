@@ -1,3 +1,4 @@
+@import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
 * {
     margin: 0;
     padding: 0;
@@ -11,11 +12,19 @@ body {
     --color-block: #f28765;
 }
 #myCheckbox {
+    position: absolute;
     opacity: 0;
+    right: -0.3em;
+    top: -0.3em;
     width: 24px;
     height: 24px;
+    z-index: 2;
 }
-
+#toggle-icon{
+    position: absolute;
+    left: 4px;
+    top: 4px;
+}
 /* ---------------------------------------------------*/
 
 /* toggle */
@@ -27,7 +36,6 @@ body {
     position: absolute;
     left: 216px;
     top: 35px;
-    border-radius: 10px;
     transition: ease 0.4s;
 }
     /* close */
@@ -38,7 +46,6 @@ body {
     position: absolute;
     left: 45px;
     top: 35px;
-    border-radius: 10px;
     transition: ease 0.4s;
 }
 
@@ -69,22 +76,28 @@ body {
     border-top-right-radius: 10px;
     transition: ease 0.4s;
 }
+
+/* ---------------------------------------------------*/
+/* logout */
+    /* open */
 .logout-open{
     position: relative;
     width: 200px;
     height: 40px;
     left: 20px;
-    top: 420px;
+    top: 500px;
     border-radius: 10px;
     background-color: var(--color-block);
     transition: ease 0.4s;
 }
+
+    /* close */
 .logout-close{
     position: relative;
     width: 40px;
     height: 40px;
-    left: 20px;
-    top: 420px;
+    left: 15px;
+    top: 500px;
     border-radius: 10px;
     background-color: var(--color-block);
     transition: ease 0.4s;
