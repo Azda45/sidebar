@@ -24,6 +24,7 @@ body {
     position: absolute;
     left: 4px;
     top: 4px;
+    transition: ease 0.4s;
 }
 /* ---------------------------------------------------*/
 

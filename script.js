@@ -7,39 +7,19 @@ window.addEventListener("focus", () => {
 });
 
 function changeClassBasedOnCheckbox() {
-  var checkboxElement = document.getElementById("myCheckbox");
-  var sidebar = document.getElementById("sidebars");
-  var toggle = document.getElementById("toggle");
-  var logout = document.getElementById("logout")
-  var icon = document.getElementById("toggle-icon")
+  const checkboxElement = document.getElementById("myCheckbox");
+  const elements = [
+    { id: "sidebars", openClass: "sidebars-open", closeClass: "sidebars-close" },
+    { id: "toggle", openClass: "toggle-open", closeClass: "toggle-close" },
+    { id: "logout", openClass: "logout-open", closeClass: "logout-close" },
+    { id: "toggle-icon", openClass: "bx-chevron-left", closeClass: "bx-chevron-right" }
+  ];
 
-  if (checkboxElement.checked) {
-    // sidebar
-    sidebar.classList.remove("sidebars-open");
-    sidebar.classList.add("sidebars-close");
-    // toggle
-    toggle.classList.remove("toggle-open");
-    toggle.classList.add("toggle-close");
-    // logout
-    logout.classList.remove("logout-open")
-    logout.classList.add("logout-close")
-    // icon
-    icon.classList.remove("bx-chevron-left")
-    icon.classList.add("bx-chevron-right")
-  } else {
-    // sidebar
-    sidebar.classList.remove("sidebars-close");
-    sidebar.classList.add("sidebars-open");
-    // toggle
-    toggle.classList.remove("toggle-close");
-    toggle.classList.add("toggle-open");
-        // logout
-        logout.classList.remove("logout-close")
-        logout.classList.add("logout-open")
-        // icon
-        icon.classList.remove("bx-chevron-right")
-        icon.classList.add("bx-chevron-left")
-  }
+  elements.forEach(({ id, openClass, closeClass }) => {
+    const element = document.getElementById(id);
+    element.classList.toggle(openClass, !checkboxElement.checked);
+    element.classList.toggle(closeClass, checkboxElement.checked);
+  });
 }
 
 document.getElementById("myCheckbox").addEventListener("change", changeClassBasedOnCheckbox);
