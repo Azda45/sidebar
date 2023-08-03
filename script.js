@@ -12,7 +12,12 @@ function changeClassBasedOnCheckbox() {
     { id: "sidebars", openClass: "sidebars-open", closeClass: "sidebars-close" },
     { id: "toggle", openClass: "toggle-open", closeClass: "toggle-close" },
     { id: "logout", openClass: "logout-open", closeClass: "logout-close" },
-    { id: "toggle-icon", openClass: "bx-chevron-left", closeClass: "bx-chevron-right" }
+    { id: "toggle-icon", openClass: "bxs-chevron-left", closeClass: "bxs-chevron-right" },
+    { id: "link1", openClass: "link1-open", closeClass: "link1-close" },
+    { id: "link2", openClass: "link2-open", closeClass: "link2-close" },
+    { id: "link3", openClass: "link3-open", closeClass: "link3-close" },
+    { id: "link4", openClass: "link4-open", closeClass: "link4-close" },
+    { id: "link5", openClass: "link5-open", closeClass: "link5-close" }
   ];
 
   elements.forEach(({ id, openClass, closeClass }) => {
