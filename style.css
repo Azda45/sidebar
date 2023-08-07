@@ -26,9 +26,8 @@ body {
 
 #toggle-icon {
     position: absolute;
-    left: 4px;
-    top: 4px;
     transition: ease 0.4s;
+    font-size: 25px;
 }
 
 /* ---------------------------------------------------*/
@@ -133,3 +132,15 @@ body {
 }
 
 /* ---------------------------------------------------*/
+#link1 div,
+#link2 div,
+#link3 div,
+#link4 div,
+#link5 div{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
