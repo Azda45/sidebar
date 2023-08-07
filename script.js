@@ -17,7 +17,12 @@ function changeClassBasedOnCheckbox() {
     { id: "link2", openClass: "link2-open", closeClass: "link2-close" },
     { id: "link3", openClass: "link3-open", closeClass: "link3-close" },
     { id: "link4", openClass: "link4-open", closeClass: "link4-close" },
-    { id: "link5", openClass: "link5-open", closeClass: "link5-close" }
+    { id: "link5", openClass: "link5-open", closeClass: "link5-close" },
+    { id: "text1", openClass: "text", closeClass: "text-close" },
+    { id: "text2", openClass: "text", closeClass: "text-close" },
+    { id: "text3", openClass: "text", closeClass: "text-close" },
+    { id: "text4", openClass: "text", closeClass: "text-close" },
+    { id: "text5", openClass: "text", closeClass: "text-close" },
   ];
 
   elements.forEach(({ id, openClass, closeClass }) => {

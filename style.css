@@ -143,4 +143,20 @@ body {
     font-size: 30px;
     text-decoration: none;
     color: black;
+    
+}
+#link1 .text,
+#link2 .text,
+#link3 .text,
+#link4 .text,
+#link5 .text{
+    left: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 1px;
+    transition: ease 0.4;
+}
+.text-close{
+    opacity: 0;
+    transition: ease 0.4;
 }
