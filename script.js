@@ -9,7 +9,6 @@ window.addEventListener("focus", () => {
 function changeClassBasedOnCheckbox() {
   const checkboxElement = document.getElementById("myCheckbox");
   const elements = [
-    { id: "toggle-icon", openClass: "bxs-chevron-left", closeClass: "bxs-chevron-right" },
     { id: "sidebars", openClass: "sidebars-open", closeClass: "sidebars-close" },
     { id: "toggle", openClass: "toggle-open", closeClass: "toggle-close" },
     { id: "logout", openClass: "logout-open", closeClass: "logout-close" },
@@ -18,6 +17,7 @@ function changeClassBasedOnCheckbox() {
     { id: "link3", openClass: "link3-open", closeClass: "link3-close" },
     { id: "link4", openClass: "link4-open", closeClass: "link4-close" },
     { id: "link5", openClass: "link5-open", closeClass: "link5-close" },
+    { id: "toggle-icon", openClass: "bx-x", closeClass: "bx-menu" },
     { id: "text1", openClass: "text", closeClass: "text-close" },
     { id: "text2", openClass: "text", closeClass: "text-close" },
     { id: "text3", openClass: "text", closeClass: "text-close" },
@@ -30,6 +30,18 @@ function changeClassBasedOnCheckbox() {
     element.classList.toggle(openClass, !checkboxElement.checked);
     element.classList.toggle(closeClass, checkboxElement.checked);
   });
+
+  localStorage.setItem("myCheckboxState", checkboxElement.checked);
 }
+
+// Retrieve checkbox state from local storage on page load
+document.addEventListener("DOMContentLoaded", () => {
+  const storedCheckboxState = localStorage.getItem("myCheckboxState");
+  if (storedCheckboxState !== null) {
+    const checkboxElement = document.getElementById("myCheckbox");
+    checkboxElement.checked = JSON.parse(storedCheckboxState);
+    changeClassBasedOnCheckbox();
+  }
+});
 
 document.getElementById("myCheckbox").addEventListener("change", changeClassBasedOnCheckbox);
