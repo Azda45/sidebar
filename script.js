@@ -9,10 +9,10 @@ window.addEventListener("focus", () => {
 function changeClassBasedOnCheckbox() {
   const checkboxElement = document.getElementById("myCheckbox");
   const elements = [
+    { id: "toggle-icon", openClass: "bxs-chevron-left", closeClass: "bxs-chevron-right" },
     { id: "sidebars", openClass: "sidebars-open", closeClass: "sidebars-close" },
     { id: "toggle", openClass: "toggle-open", closeClass: "toggle-close" },
     { id: "logout", openClass: "logout-open", closeClass: "logout-close" },
-    { id: "toggle-icon", openClass: "bxs-chevron-left", closeClass: "bxs-chevron-right" },
     { id: "link1", openClass: "link1-open", closeClass: "link1-close" },
     { id: "link2", openClass: "link2-open", closeClass: "link2-close" },
     { id: "link3", openClass: "link3-open", closeClass: "link3-close" },
